@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#ffe4c4">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textSize ="18dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tiêu đề"/>
+    <!--Edit text to enter course name-->
+    <EditText
+        android:id="@+id/idEdtCourseName"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/vien"
+        android:hint="Nhập tiêu đề" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="monospace"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"
+        android:textSize ="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ghi chú"/>
+    <!--edit text to enter course duration-->
+    <EditText
+        android:id="@+id/idEdtCourseDescription"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/vien"
+        android:gravity="top"
+        android:textColor="@color/black"
+        android:hint="Nhập ghi chú"
+        android:padding="10dp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textSize ="18dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thời gian"/>
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:gravity="start|center"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:background="@drawable/vien"
+        android:hint="Chọn thời gian" />
+
+    <Button
+        android:id="@+id/date_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Chọn ngày"
+        android:backgroundTint="#ff7f50"
+        android:textColor="@color/white"/>
+    <!--button for adding new course-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/huyBtn"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#c0c0c0"
+            android:text="Hủy"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/idBtnAddCourse"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#00ff00"
+            android:text="Lưu"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/idBtnReadCourse"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#ffe4c4"
+        android:text="Xem ghi chú"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+</LinearLayout>
